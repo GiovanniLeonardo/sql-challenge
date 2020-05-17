@@ -11,7 +11,7 @@ SQL Homework - Employee Database
 ### Data Modeling
 
 #### Sketch of ERD of the tables.
-![ERD](ERD.png)
+![ERD](ERD.PNG)
 
 ### Data Engineering
 
