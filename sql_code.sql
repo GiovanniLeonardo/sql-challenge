@@ -19,8 +19,7 @@ employees.emp_no=salaries.emp_no;
 -- List employees who were hired in 1986
 
 SELECT * FROM employees
-WHERE hire_date > '1985-12-31' and hire_date < '1987-01-01'
-
+WHERE hire_date like '1986%'
 
 
 -- 3.
@@ -101,8 +100,8 @@ WHERE department.dept_name = 'Sales' OR department.dept_name = 'Development';
 -- In descending order, list the frequency count of employee last names, 
 -- i.e., how many employees share each last name.
 
-SELECT last_name, count (last_name) as name_cnt
+SELECT last_name AS "Last_Name", count (last_name) AS Name_Count
 FROM employees
 GROUP BY last_name
-ORDER BY name_cnt desc;
+ORDER BY Name_Count desc;
 
