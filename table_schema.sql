@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS dept_manager (
 
 CREATE TABLE IF NOT EXISTS salaries (
     emp_no int   NOT NULL,
-    salary int   NOT NULL,
+    salary numeric   NOT NULL,
     from_date date   NOT NULL,
     to_date date   NOT NULL
 );
